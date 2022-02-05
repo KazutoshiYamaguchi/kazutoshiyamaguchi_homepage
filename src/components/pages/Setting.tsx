@@ -2,13 +2,13 @@
 import { Box, Flex, Image, Text } from "@chakra-ui/react";
 import { useEffect, VFC } from "react";
 
-import image from "../../ImageSource/Images/kazu_dinasour.jpg"
+import image from "../../ImageSource/Images/kazu_funny.jpg"
 import { HomeMessages } from "./Messages/HomeMessages";
 
-export const Home: VFC = () => {
+export const Setting: VFC = () => {
 
-    return <Box display="flex" boxSize={10} w='100%' h="100%" p={10} bg='teal.900'>
-        <Image w={{ base: "300px", md: "500px" }} mr={{ base: 10, md: 20 }} borderRadius={10} src={image} alt='kazu' />
+    return <Box display="flex" w='100%' h="auto" p={10} bg='teal.900'>
+        <Image marginTop="auto" marginBottom="auto" boxSize={{ base: "250px", md: "400px" }} w={{ base: "300px", md: "500px" }} mr={{ base: 10, md: 20 }} borderRadius={10} src={image} alt='kazu' />
         <Box w="50%" marginLeft="auto" bg="white.900" >
 
             {HomeMessages.map((message) => (
@@ -16,7 +16,6 @@ export const Home: VFC = () => {
                     {message.message}
                     <br />
                     {message.engMessage}
-
                 </Text>
             ))}
         </Box>

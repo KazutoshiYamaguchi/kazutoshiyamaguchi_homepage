@@ -1,27 +1,33 @@
 
-import { useHistory } from "react-router-dom"
+
 import useSound from "use-sound"
 import styled from "styled-components";
 import { CSSTransition } from "react-transition-group";
 
 
-import { OpeningDoor } from "../animations/openingDoor"
+import { OpeningDoor } from "../atoms/animations/openingDoor"
 import doorOpeningSound from '../../soundSource/door_opening.mp3'
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Box } from "@chakra-ui/react";
 
 export const Entrance = () => {
-  const history = useHistory()
-  const [isOpen, switchIsOpen] = useState(true)
+
+  const [isOpen, switchIsOpen] = useState(false)
   const [play] = useSound(doorOpeningSound)
 
   const onClickEnter = () => {
     play()
-    history.push('/home')
     switchIsOpen(false)
+
+    //1秒後に/homeに画面遷移
+    setTimeout(() => {
+      window.location.href = '/home';
+    }, 1000);
+
   }
 
 
+  useEffect(() => switchIsOpen(true), [])
 
   return (
     <>
@@ -31,20 +37,21 @@ export const Entrance = () => {
           <CSSTransition
             classNames="modal"
             in={isOpen}
-            timeout={700}
+            timeout={4000}
             unmountOnExit>
+            <ModalStyle>
+              <Box>
+                <OpeningDoor onClick={onClickEnter} text="tap to enter" />
 
-            <Box>
-              <OpeningDoor onClick={onClickEnter} text="tap to enter" />
-
-            </Box>
+              </Box>
+            </ModalStyle>
 
           </CSSTransition>
         </div>
         <CSSTransition
           classNames="overlay"
           in={isOpen}
-          timeout={700}
+          timeout={4000}
           unmountOnExit>
           <OverlayStyle />
         </CSSTransition>
@@ -75,7 +82,7 @@ const TransitionStyle = styled.div`
   .modal-enter-active {
     opacity: 1;
     transform: translateX(0);
-    transition: opacity 0.3s, transform 0.3s;
+    transition: opacity 0.3s, transform 1s;
   }
 
   .modal-exit {
@@ -84,7 +91,7 @@ const TransitionStyle = styled.div`
 
   .modal-exit-active {
     opacity: 0;
-    transition: opacity 0.3s, transform 0.3s;
+    transition: opacity 0.3s, transform 2s;
     transform: scale(0.9);
   }
 }
@@ -96,7 +103,7 @@ const TransitionStyle = styled.div`
 .overlay-enter-active {
   opacity: 1;
   transform: translateX(0);
-  transition: opacity 0.3s, transform 0.3s;
+  transition: opacity 0.3s, transform 2s;
 }
 
 .overlay-exit {
@@ -105,7 +112,7 @@ const TransitionStyle = styled.div`
 
 .overlay-exit-active {
   opacity: 0;
-  transition: opacity 0.3s, transform 0.3s;
+  transition: opacity 0.3s, transform 2s;
 }
 `;
 

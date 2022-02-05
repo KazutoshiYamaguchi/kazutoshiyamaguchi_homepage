@@ -1,4 +1,5 @@
 import React from 'react';
+import theme from './theme/theme';
 
 import './App.css';
 
@@ -9,7 +10,7 @@ import { Router } from './router/Router';
 function App() {
 
   return (
-    <ChakraProvider>
+    <ChakraProvider theme={theme}>
       <BrowserRouter>
         <Router />
       </BrowserRouter>
