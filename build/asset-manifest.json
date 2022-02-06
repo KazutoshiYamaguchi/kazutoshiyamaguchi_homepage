@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/static/css/main.ec356521.css",
+    "main.js": "/static/js/main.9de3fcc4.js",
+    "static/js/845.79bf5749.chunk.js": "/static/js/845.79bf5749.chunk.js",
+    "static/js/787.ebe01bb6.chunk.js": "/static/js/787.ebe01bb6.chunk.js",
+    "static/media/kazu_drowning.jpg": "/static/media/kazu_drowning.bf2ea395a10ec35530e5.jpg",
+    "static/media/kazu_funny.jpg": "/static/media/kazu_funny.417ea1b40fba09dff22d.jpg",
+    "static/media/kazu_dinasour.jpg": "/static/media/kazu_dinasour.0046e04f57e2a305ac5e.jpg",
+    "static/media/door_opening.mp3": "/static/media/door_opening.c6b66d5907f174e1a2ef.mp3",
+    "index.html": "/index.html",
+    "main.ec356521.css.map": "/static/css/main.ec356521.css.map",
+    "main.9de3fcc4.js.map": "/static/js/main.9de3fcc4.js.map",
+    "845.79bf5749.chunk.js.map": "/static/js/845.79bf5749.chunk.js.map",
+    "787.ebe01bb6.chunk.js.map": "/static/js/787.ebe01bb6.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ec356521.css",
+    "static/js/main.9de3fcc4.js"
+  ]
+}
