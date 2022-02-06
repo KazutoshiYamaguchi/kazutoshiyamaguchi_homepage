@@ -1,7 +1,7 @@
 {
   "name": "kazutoshi_yamaguchi_homepage",
   "version": "0.1.0",
-  "private": false,
+  "private": true,
   "dependencies": {
     "@chakra-ui/icons": "^1.1.1",
     "@chakra-ui/react": "^1.8.1",
