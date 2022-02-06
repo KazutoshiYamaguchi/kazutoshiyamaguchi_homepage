@@ -32,10 +32,10 @@ export const MenuDrawer: VFC<Props> = memo((props) => {
                             Top
                         </Button>
                         <Button onClick={onClickUserManagement} w="100%">
-                            ユーザー一覧
+                            Profile
                         </Button>
                         <Button onClick={onClickSetting} w="100%">
-                            設定
+                            Message
                         </Button>
                     </DrawerBody>
                 </DrawerContent>

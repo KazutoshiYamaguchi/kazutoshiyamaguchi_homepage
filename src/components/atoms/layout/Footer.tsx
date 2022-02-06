@@ -1,7 +1,25 @@
+import { Box, Flex, Text } from "@chakra-ui/react";
 import { VFC } from "react";
 import styled from "styled-components";
+import { CreativeStaffModal } from "../CreativeStaffModal"
 export const Footer: VFC = () => {
-    return <SFooter className="font-link">copyright&copy;Kazutoshi Yamaguchi All rights reserved.</SFooter>;
+  return <SFooter>
+    <Flex
+      as="nav"
+      bg="teal.500"
+      color="gray.50"
+      w="100%"
+      textAlign="center"
+      justify="space-between"
+    // padding={{ base: 3, md: 3 }}
+
+    >
+      <Text marginRight="auto" marginLeft="auto" className="font-link">copyright&copy;Kazutoshi Yamaguchi All rights reserved.</Text>;
+      <CreativeStaffModal />
+
+    </Flex>
+  </SFooter>
+
 };
 
 const SFooter = styled.footer`

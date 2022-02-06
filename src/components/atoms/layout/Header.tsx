@@ -14,7 +14,7 @@ export const Header: VFC = memo(() => {
     }, []);
     const onClickUserManagement = useCallback(
         () => {
-            history.push("/home/user_management")
+            history.push("/home/profile")
             onClose()
         }, []);
     const onClickSetting = useCallback(() => {
@@ -31,6 +31,7 @@ export const Header: VFC = memo(() => {
                 align="center"
                 justify="space-between"
                 padding={{ base: 3, md: 3 }}
+
             >
                 <Flex
                     align="center"
@@ -52,9 +53,9 @@ export const Header: VFC = memo(() => {
                     display={{ base: "none", md: "flex" }}
                 >
                     <Box pr={4}>
-                        <Link onClick={onClickUserManagement}>ユーザー一覧</Link>
+                        <Link onClick={onClickUserManagement} className="font-link">Profile</Link>
                     </Box>
-                    <Link onClick={onClickSetting}>設定</Link>
+                    <Link onClick={onClickSetting} className="font-link">Message</Link>
                 </Flex>
                 <MenuIconButton onOpen={onOpen} />
             </Flex>
