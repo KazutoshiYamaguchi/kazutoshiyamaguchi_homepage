@@ -9,12 +9,12 @@ export const CreativeStaffModal: VFC = memo(() => {
 
     return (
         <>
-            <Text pr={8} onClick={onOpen} as="u" className="font-link" _hover={{ cursor: "pointer", opacity: 0.8 }}>Creative Staff</Text>
+            <Text pr={8} onClick={onOpen} as="u" className="font-link" _hover={{ cursor: "pointer", opacity: 0.8 }} fontSize={{ base: "sm", md: "sm" }}>Creative Staff</Text>
 
             <Modal blockScrollOnMount={false} isOpen={isOpen} onClose={onClose}>
                 <ModalOverlay bg="whiteAlpha.600" />
                 <ModalContent bg="gray.900" opacity={0.1}>
-                    <ModalHeader className="font-link" color="gray.100" fontWeight='bold'>Creative Staff</ModalHeader>
+                    <ModalHeader className="font-link" color="gray.100" fontWeight='bold' >Creative Staff</ModalHeader>
                     <ModalCloseButton variant="unstyled" bg="none" color="white " />
                     <ModalBody>
                         {CreativeStaffInfo.map((staff, index) => (

@@ -11,14 +11,14 @@ export const Footer: VFC = () => {
       w="100%"
       textAlign="center"
       justify="space-between"
-    // padding={{ base: 3, md: 3 }}
+      padding={{ base: 2, md: 2 }}
 
     >
-      <Text marginRight="auto" marginLeft="auto" className="font-link">copyright&copy;Kazutoshi Yamaguchi All rights reserved.</Text>;
+      <Text marginRight="auto" marginLeft="auto" className="font-link" fontSize={{ base: "sm", md: "sm" }}>copyright&copy;Kazutoshi Yamaguchi All rights reserved.</Text>;
       <CreativeStaffModal />
 
     </Flex>
-  </SFooter>
+  </SFooter >
 
 };
 
