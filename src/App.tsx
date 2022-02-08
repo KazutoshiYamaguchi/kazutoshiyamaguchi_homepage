@@ -11,9 +11,9 @@ function App() {
 
   return (
     <ChakraProvider theme={theme}>
-      <HashRouter>
+      <BrowserRouter basename={process.env.PUBLIC_URL}>
         <Router />
-      </HashRouter>
+      </BrowserRouter>
     </ChakraProvider>
 
   )

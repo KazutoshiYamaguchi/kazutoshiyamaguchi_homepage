@@ -9,16 +9,16 @@ export const Header: VFC = memo(() => {
     const { isOpen, onOpen, onClose } = useDisclosure();
     const history = useHistory();
     const onClickHome = useCallback(() => {
-        history.push("/home")
+        history.push("/entrance/home")
         onClose()
     }, []);
     const onClickUserManagement = useCallback(
         () => {
-            history.push("/home/profile")
+            history.push("/entrance/home/profile")
             onClose()
         }, []);
     const onClickSetting = useCallback(() => {
-        history.push("/home/setting")
+        history.push("/entrance/home/setting")
         onClose()
     }, []);
 

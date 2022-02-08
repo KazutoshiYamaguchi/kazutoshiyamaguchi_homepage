@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/kazutoshiyamaguchi_homepage/static/css/main.ec356521.css",
-    "main.js": "/kazutoshiyamaguchi_homepage/static/js/main.295e06c9.js",
+    "main.js": "/kazutoshiyamaguchi_homepage/static/js/main.e5bff5e4.js",
     "static/js/845.79bf5749.chunk.js": "/kazutoshiyamaguchi_homepage/static/js/845.79bf5749.chunk.js",
     "static/js/787.ebe01bb6.chunk.js": "/kazutoshiyamaguchi_homepage/static/js/787.ebe01bb6.chunk.js",
     "static/media/kazu_drowning.jpg": "/kazutoshiyamaguchi_homepage/static/media/kazu_drowning.bf2ea395a10ec35530e5.jpg",
@@ -10,12 +10,12 @@
     "static/media/door_opening.mp3": "/kazutoshiyamaguchi_homepage/static/media/door_opening.c6b66d5907f174e1a2ef.mp3",
     "index.html": "/kazutoshiyamaguchi_homepage/index.html",
     "main.ec356521.css.map": "/kazutoshiyamaguchi_homepage/static/css/main.ec356521.css.map",
-    "main.295e06c9.js.map": "/kazutoshiyamaguchi_homepage/static/js/main.295e06c9.js.map",
+    "main.e5bff5e4.js.map": "/kazutoshiyamaguchi_homepage/static/js/main.e5bff5e4.js.map",
     "845.79bf5749.chunk.js.map": "/kazutoshiyamaguchi_homepage/static/js/845.79bf5749.chunk.js.map",
     "787.ebe01bb6.chunk.js.map": "/kazutoshiyamaguchi_homepage/static/js/787.ebe01bb6.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ec356521.css",
-    "static/js/main.295e06c9.js"
+    "static/js/main.e5bff5e4.js"
   ]
 }

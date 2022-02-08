@@ -21,7 +21,7 @@ export const Entrance = () => {
 
     //1秒後に/homeに画面遷移
     setTimeout(() => {
-      window.location.href = '/home';
+      window.location.href = 'entrance/home';
     }, 1000);
 
   }
