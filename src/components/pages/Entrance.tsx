@@ -21,7 +21,8 @@ export const Entrance = () => {
 
     //1秒後に/homeに画面遷移
     setTimeout(() => {
-      window.location.href = 'entrance/home';
+      //最初入る時だけ/kazutoshiyamaguchi_homepageを付け加える
+      window.location.href = '/kazutoshiyamaguchi_homepage/home';
     }, 1000);
 
   }
